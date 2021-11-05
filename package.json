@@ -13,10 +13,12 @@
     "test:watch": "yarn test --watch"
   },
   "lint-staged": {
-    "src/!(styles)/*": [
+    "src/**/*.{js,jsx,ts,tsx}": [
       "yarn lint --fix",
       "yarn test --findRelatedTests --bail"
-    ]
+    ],
+    "*.css": "stylelint",
+    "*.scss": "stylelint --syntax=scss"
   },
   "dependencies": {
     "next": "11.1.0",
