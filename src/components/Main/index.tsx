@@ -1,7 +1,5 @@
 import style from 'styles/Main/Main.module.scss'
 
-const foo = 'asd'
-
 const Main = () => {
   return (
     <main>
