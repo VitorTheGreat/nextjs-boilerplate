@@ -17,4 +17,11 @@ describe('<Main />', () => {
     //* this is one more layer to our testing
     expect(container.firstChild).toMatchSnapshot()
   })
+
+  //* testing the stylings
+  it('should render the stylings correctly', () => {
+    const { container } = render(<Main />)
+
+    expect(container.firstChild).toHaveStyle({ 'font-size': '12px;' })
+  })
 })
