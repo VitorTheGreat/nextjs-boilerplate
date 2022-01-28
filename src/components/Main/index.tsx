@@ -1,9 +1,9 @@
-import style from 'styles/Main/Main.module.scss'
+import style from './Main.module.scss'
 
-const Main = () => {
+const Main = ({ title = 'React Avançado' }) => {
   return (
     <main>
-      <h1 className={style.test}>React Avançado</h1>
+      <h1 className={style.test}>{title}</h1>
     </main>
   )
 }
